@@ -1,0 +1,25 @@
+#Awal Program
+print("=======================================================")
+print("Program Modul 11 Latihan 1")
+print("=======================================================")
+
+#Isi Program
+class student:
+    stdcount = 0
+    def __init__(self,name, nim, angkatan):
+        self.name = name
+        self.nim = nim
+        self.angkatan = angkatan
+        student.stdcount+=1
+
+    def displaystudent(self):
+        print("name" , self.name, "nim" , self.nim, "angkatan" , self.angkatan)
+
+name = input("Masukan Nama Anda: ")
+nim = input("Masukan NIM Anda: ")
+angkatan = input("Masukan Angkatan Anda: ")
+std=student(name ,nim , angkatan)
+std.displaystudent()
+
+#Akhir Program
+print("\nTerima Kasih Telah Menggunakan Program Ini.")
